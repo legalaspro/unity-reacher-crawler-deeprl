@@ -1,0 +1,13 @@
+name: control-reacher
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - grpcio=1.62.0
+  - pip:
+      - torch==2.2.2
+      - imageio==2.35.1
+      - "imageio[ffmpeg]"
+      - -e ./python
